@@ -17,7 +17,7 @@
   <title>Sumbul</title>
 </head>
 
-<body class="b">
+<body>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">Navbar</a>
@@ -47,23 +47,15 @@
 
 
   <form class="login">
-    <div class="mb-3">
-    
-        
+    <input type="email" id="inputEmail" class="form-control" placeholder="User ID" required="" autofocus="">
+    <label for="inputPassword" class="visually-hidden">Password</label>
+    <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+    <div class="checkbox mb-3">
+      <label>
+        <input type="checkbox" value="remember-me"> Remember me
       </label>
-      <input type="text" id="idToken1" name="callback_0" value="" data-validator="required" required=""
-        data-validator-event="keyup" class="form-control input-lg" placeholder="User ID" autofocus="">
-      
-
     </div>
-  </label>
-  <input type="text" id="idToken1" name="callback_0" value="" data-validator="required" required=""
-    data-validator-event="keyup" class="form-control input-lg" placeholder="Password" autofocus="">
-    <div class="mb-3 form-check">
-      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-      <label class="form-check-label" for="exampleCheck1">Remember my User name</label>
-    </div>
-    <button type="submit" class="btn btn-primary">Log In</button>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
   </form>
 </body>
 
